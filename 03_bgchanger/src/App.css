@@ -1,0 +1,58 @@
+/* Full-page styling */
+body, html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Fullscreen container with 100% width */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%; /* Ensures full width */
+  transition: background-color 0.5s ease; /* Smooth color transition */
+}
+
+/* Box around buttons */
+.button-box {
+  margin-top: 400px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  flex-wrap: wrap;
+}
+
+/* Button Styling */
+.red, .blue, .green, .purple, .black, .yellow {
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* Individual Button Colors */
+.red { background-color: red; }
+.blue { background-color: blue; }
+.green { background-color: green; }
+.purple { background-color: purple; }
+.black { background-color: black; }
+.yellow { background-color: yellow; color: black; } /* Black text for contrast */
+
+/* Button Hover Effects */
+.red:hover { background-color: darkred; }
+.blue:hover { background-color: darkblue; }
+.green:hover { background-color: darkgreen; }
+.purple:hover { background-color: indigo; }
+.black:hover { background-color: #333; }
+.yellow:hover { background-color: gold; }
+
